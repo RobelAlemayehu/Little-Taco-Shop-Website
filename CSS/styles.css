@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,button,textarea{
+    font: inherit;
+}
+:root{
+    --FF: "Nunito", sans-serif;
+    --FF-HEADING: :"Fugaz One", cursive;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+    
+    --BGCOLOR-FADE: rgb(252.,220,160);
+    --BGCOLOR: orange;
+    --BGIMAGE: linear-gradient(to buttom, var(var(var(--BGCOLOR)),var(var(var(--BGCOLOR-FADE)))));
+    --BODY-BGCOLOR: #FFF;
+    --FONT-COLOR:#000;
+
+}
+
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.center{
+    text-align: center;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
