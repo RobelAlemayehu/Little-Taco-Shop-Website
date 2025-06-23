@@ -7,10 +7,11 @@
     <title>Contact Us-LTS</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js"></script>
   </head>
   <body>
     <header class="header">
-      <h1 class="header__h1">Contact</h1>
+      <h1 class="header__h1">Little Taco Shop</h1>
       <nav class="header__nav">
         <ul class="header__ul">
           <li><a href="/">Home</a></li>
@@ -35,20 +36,25 @@
     <main class="main">
       <article class="main__article">
         <address>
-          <h2>Our Location</h2>
+          <h2 class="contact__h2">Our Location</h2>
 
           555 Taco Temptation Lane, Suite T <br />
           Kansas City, MO 55555-5555
         </address>
       </article>
-      <article class="main__article">
+      <article class="main__article contact">
         <h2>Our Contact Form</h2>
-        <form action="">
-          <fieldset>
-            <legend>Send Us a Message</legend>
-            <p>
-              <label for="name">Name: </label>
+        <form
+          action="https://httpbin.org/get"
+          method="get"
+          class="contact__form"
+        >
+          <fieldset class="coantact__fieldset">
+            <legend class="offscreen">Send Us a Message</legend>
+            <p class="contact__p">
+              <label class="contact__lable" for="name">Name: </label>
               <input
+                class="contact__input"
                 type="text"
                 name="name"
                 id="name"
@@ -56,9 +62,10 @@
                 required
               />
             </p>
-            <p>
-              <label for="email">Email: </label>
+            <p class="contact__p">
+              <label class="contact__lable" for="email">Email: </label>
               <input
+                class="contact__input"
                 type="email"
                 name="email"
                 id="email"
@@ -66,10 +73,11 @@
                 required
               />
             </p>
-            <p>
-              <label for="message">Your Message: </label>
+            <p class="contact__p">
+              <label class="contact__lable" for="message">Your Message: </label>
               <br />
               <textarea
+                class="contact__textarea"
                 name="message"
                 id="message"
                 cols="50"
@@ -78,8 +86,8 @@
               ></textarea>
             </p>
           </fieldset>
-          <button type="submit">Send</button>
-          <button type="reset">Reset</button>
+          <button class="contact__button" type="submit">Send</button>
+          <button class="contact__button" type="reset">Reset</button>
         </form>
       </article>
     </main>
@@ -88,7 +96,7 @@
 
     <footer class="footer">
       <p>
-        <span class="nowrap">Copyright &COPY; </span>
+        <span class="nowrap">Copyright &COPY; <time id="year"></time></span>
         <span class="nowrap">Little Taco Shop</span>
       </p>
     </footer>
