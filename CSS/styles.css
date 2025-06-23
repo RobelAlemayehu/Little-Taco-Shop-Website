@@ -111,3 +111,11 @@ a:active{
     font-weight: bold;
     box-shadow: 0 6px 5px -5px var(--BORDER-COLOR); 
 }
+
+.header__ul{
+    padding: var(--PADDING-TOPBOTTOM) var(--PADDING-SIDE);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
