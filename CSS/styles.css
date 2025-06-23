@@ -22,9 +22,10 @@ input,button,textarea{
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     
-    --BGCOLOR-FADE: rgb(252.,220,160);
+    
     --BGCOLOR: orange;
-    --BGIMAGE: linear-gradient(to buttom, var(var(var(--BGCOLOR)),var(var(var(--BGCOLOR-FADE)))));
+    --BGCOLOR-FADE: rgb(252,220,160);
+    --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR),var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: #FFF;
     --FONT-COLOR:#000;
 
@@ -43,5 +44,8 @@ input,button,textarea{
 
 html{
     scroll-behavior: smooth;
-    
+    font-size: var(--FS);
+    font-family: var(--FF);
+    background-color: var(--BGCOLOR);
+    background-image: var(--BGIMAGE);
 }
