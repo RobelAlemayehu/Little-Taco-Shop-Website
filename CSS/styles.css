@@ -29,10 +29,17 @@ input,button,textarea{
     --LINK-COLOR:#000;
     --LINK-HOVER: hsla(0,0%,0%, 0.6);
     --LINK-ACTIVE: orange;
-
+    --HEADERBG-COLOR:#000;
+    --HEADER-COLOR:#FFF;
+    --NAV-BGCOLOR:#FFF;
 
     --BORDER-COLOR: #333;
     --BORDERS: 1px solid var(--BORDER-COLOR);
+
+    --PADDING-TOPBOTTOM:0.25em;
+    --PADDING-SIDE:2.5%;
+
+    --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
 }
 
 .offscreen{
@@ -86,3 +93,21 @@ a:active{
     color: var(--LINK-ACTIVE);
 }
 
+.header{
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+
+.header__h1{
+    text-align: center;
+    background-color: var(--HEADERBG-COLOR);
+    color: var(--HEADER-COLOR);
+    padding: var(--PADDING-TOPBOTTOM) var(--PADDING-SIDE);
+}
+.header__nav{
+    background-color: var(--NAV-BGCOLOR);
+    border-bottom: var(--BORDERS);
+    font-weight: bold;
+    box-shadow: 0 6px 5px -5px var(--BORDER-COLOR); 
+}
