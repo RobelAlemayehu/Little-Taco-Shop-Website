@@ -28,7 +28,10 @@ input,button,textarea{
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR),var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: #FFF;
     --FONT-COLOR:#000;
+    --BORDER-COLOR: #333;
 
+
+    --BORDERS: 1px solid var(--BORDER-COLOR);
 }
 
 .offscreen{
@@ -48,4 +51,14 @@ html{
     font-family: var(--FF);
     background-color: var(--BGCOLOR);
     background-image: var(--BGIMAGE);
+}
+body{
+    background-color: var(--BODY-BGCOLOR);
+    color: var(--FONT-COLOR);
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: var(--BORDERS);
+    border-right: var(--BORDERS);
+    box-shadow: 0 0 10px var(--BORDER-COLOR);
 }
