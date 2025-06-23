@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
-
 *,
 *::after,
 *::before{
@@ -21,16 +20,14 @@ input,button,textarea{
     --FF-HEADING: :"Fugaz One", cursive;
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
-    
-    
     --BGCOLOR: orange;
     --BGCOLOR-FADE: rgb(252,220,160);
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR),var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: #FFF;
     --FONT-COLOR:#000;
+    --HIGHLIGHT-COLOR:rgb(51,178,51);
+
     --BORDER-COLOR: #333;
-
-
     --BORDERS: 1px solid var(--BORDER-COLOR);
 }
 
@@ -61,4 +58,12 @@ body{
     border-left: var(--BORDERS);
     border-right: var(--BORDERS);
     box-shadow: 0 0 10px var(--BORDER-COLOR);
+}
+h1, h2, h3{
+    font-family: var(--FF-HEADING);
+    letter-spacing: 0.1em;
+}
+h2, h3{
+    margin-bottom: 1rem;
+    color: var(--HIGHLIGHT-COLOR);
 }
